@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://engineerxgold.github.io/sitemap.xml
