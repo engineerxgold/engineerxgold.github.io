@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Engineer X — Who We Are &amp; How Gold Zones Are Made</title>
+<meta name="description" content="Who runs Engineer X, how the daily XAUUSD zones and trade alerts are produced and checked, our AI and editorial policy, and how we earn.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="Engr. M Ahmad Mehmood">
+<link rel="canonical" href="https://engineerxgold.github.io/about/">
+<link rel="icon" type="image/png" href="../img/logo.png">
+<link rel="apple-touch-icon" href="../img/logo.png">
+<meta property="og:site_name" content="Engineer X">
+<meta property="og:title" content="About Engineer X — Who We Are &amp; How Gold Zones Are Made">
+<meta property="og:description" content="Who runs Engineer X, how the daily XAUUSD zones and trade alerts are produced and checked, our AI and editorial policy, and how we earn.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://engineerxgold.github.io/about/">
+<meta property="og:image" content="https://engineerxgold.github.io/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="About Engineer X — Who We Are &amp; How Gold Zones Are Made">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Engineer X — Who We Are &amp; How Gold Zones Are Made">
+<meta name="twitter:description" content="Who runs Engineer X, how the daily XAUUSD zones and trade alerts are produced and checked, our AI and editorial policy, and how we earn.">
+<meta name="twitter:image" content="https://engineerxgold.github.io/img/og.png">
+<meta name="twitter:image:alt" content="About Engineer X — Who We Are &amp; How Gold Zones Are Made">
+
+<meta name="theme-color" content="#07080B">
+
+<link rel="alternate" type="application/rss+xml" title="Engineer X — articles" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "name": "About Engineer X", "url": "https://engineerxgold.github.io/about/", "mainEntity": {"@type": "Person", "@id": "https://engineerxgold.github.io/about/#author", "name": "Engr. M Ahmad Mehmood", "url": "https://engineerxgold.github.io/about/", "jobTitle": "MQL5 Expert Advisor developer and gold trading educator", "worksFor": {"@id": "https://engineerxgold.github.io/#organization"}, "sameAs": ["https://t.me/engineerxgold"]}, "publisher": {"@id": "https://engineerxgold.github.io/#organization"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://engineerxgold.github.io/#organization", "name": "Engineer X", "url": "https://engineerxgold.github.io/", "logo": {"@type": "ImageObject", "url": "https://engineerxgold.github.io/img/logo.png", "width": 512, "height": 512}, "sameAs": ["https://t.me/engineerxgold", "https://whatsapp.com/channel/0029Vb9EdQwEquiXbvIOzF1f"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engineerxgold.github.io/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://engineerxgold.github.io/about/"}]}</script>
+
+<style>
+:root{--gold:#E7B53B;--gold-hi:#FFE7A8;--bg:#07080B;--bg2:#0E1016;--panel:#12151D;--line:#232836;--green:#25C97D;--red:#F0525C;--text:#F3F0E8;--muted:#8C93A1}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:linear-gradient(180deg,var(--bg2),var(--bg) 40%);color:var(--text);font:17px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;top:-30vw;right:-20vw;width:80vw;height:80vw;background:radial-gradient(circle,color-mix(in srgb,var(--gold) 16%,transparent),transparent 62%);z-index:-1;pointer-events:none}
+a{color:var(--gold)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.14em;font-size:15px;color:var(--text);text-decoration:none;text-transform:uppercase}
+.logo b{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#A9791F);color:#07080B;font-size:22px;letter-spacing:0}
+nav .links a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+nav .links a.cta{color:#07080B;background:var(--gold);padding:9px 16px;border-radius:99px}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
+.gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#A9791F);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{padding:70px 0 40px}
+.chip{display:inline-block;border:1px solid color-mix(in srgb,var(--gold) 70%,transparent);color:var(--gold);border-radius:99px;padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:900;margin:20px 0 18px}
+.hero p{color:var(--muted);font-size:19px;max-width:660px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:16px 26px;border-radius:99px;font-weight:800;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold) 60%,#B98728);color:#07080B;box-shadow:0 12px 34px color-mix(in srgb,var(--gold) 30%,transparent)}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+section{padding:52px 0}
+section>h2{font-size:clamp(28px,4.4vw,42px);font-weight:900;margin-bottom:10px}
+section>p.lead{color:var(--muted);margin-bottom:26px;max-width:700px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:22px;padding:24px}
+.card .n{font-weight:900;font-size:28px;margin-bottom:8px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15.5px}
+.shot{border-radius:22px;border:1px solid var(--line);width:100%;height:auto;display:block}
+.two{display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
+.stat{font-size:42px;font-weight:900}
+.warn{border-left:4px solid var(--red);background:color-mix(in srgb,var(--red) 7%,var(--panel));padding:18px 20px;border-radius:14px;color:#e8d9d9;font-size:14.5px}
+details{background:var(--panel);border-radius:16px;padding:18px 20px;margin-bottom:10px;border:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin-top:8px}
+.posts a{text-decoration:none;color:var(--text)}
+.posts .card:hover{border-color:var(--gold)}
+.date{color:var(--muted);font-size:13px;letter-spacing:.04em}
+article{max-width:760px}
+article h1{font-size:clamp(32px,5.4vw,50px);font-weight:900;margin:16px 0 12px}
+article h2{font-size:26px;margin:36px 0 12px}
+article p,article li{margin-bottom:14px;color:#d9dbe3}
+article ul{padding-left:22px}
+.ctabox{margin:38px 0;background:linear-gradient(135deg,color-mix(in srgb,var(--gold) 16%,var(--panel)),var(--panel));border:1px solid color-mix(in srgb,var(--gold) 60%,transparent);border-radius:22px;padding:26px}
+.ctabox h3{margin-bottom:8px;font-size:22px}
+.ctabox p{color:var(--muted)}
+.crumbs{font-size:14px;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.byline{color:var(--muted);font-size:14.5px;margin-bottom:6px}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:18px 0}
+.toc ol{padding-left:20px}.toc li{margin:4px 0;color:var(--muted)}
+.note{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:28px}
+img{max-width:100%;height:auto}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px;margin-top:40px}
+footer .fl a{color:var(--muted);margin-right:16px}
+.float{position:fixed;right:16px;bottom:16px;background:linear-gradient(180deg,var(--gold-hi),var(--gold));color:#07080B;padding:14px 20px;border-radius:99px;font-weight:800;text-decoration:none;box-shadow:0 10px 28px rgba(0,0,0,.45)}
+@media(max-width:760px){nav .links a:not(.cta){display:none}.two{grid-template-columns:1fr}.hero{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="logo" href="../"><b>X</b>Engineer X</a>
+<div class="links"><a href="../zones/">Daily Zones</a><a href="../blog/">Learn</a><a href="../#free-ea">Free EA</a><a href="../about/">About</a><a class="cta" href="https://t.me/EngineerXGold_bot?start=trial_g_website_20261013_595a63d8">7-Day Free Trial</a></div></nav>
+<article><p class="crumbs"><a href="../">Home</a> › About</p><h1>About Engineer X and our methodology</h1><p class="byline">Run by Engr. M Ahmad Mehmood · MQL5 Expert Advisor developer · Updated 13 October 2026</p><p>Engineer X teaches gold (XAUUSD) trading with clear, rule-based methods: smart money concepts, volume spread analysis (VSA), Wyckoff tests and disciplined risk management. Everything we publish is education, not personal financial advice.</p><h2 id="who">Who is behind it</h2><p>Engr. M Ahmad Mehmood builds MetaTrader 5 tools and runs the Engineer X channel, website and VIP group. Questions go to the same team on Telegram: <a href="https://t.me/engineerxgold">https://t.me/engineerxgold</a>.</p><h2 id="zones">How the gold zones are made</h2><p>Zones come from closed broker candles on the daily, 4-hour and 1-hour charts. A zone needs several independent confluences (structure break, liquidity sweep, displacement, freshness, trend alignment and location). Each zone has a written invalidation level and is tracked after publication: tested, confirmed, held, invalidated or expired. Quality grades count confluences; they are not win probabilities. Broker tick volume is an activity proxy, not exchange volume.</p><h2 id="alerts">How trade alerts are checked</h2><p>An alert is published only when every rule passes: fresh broker data, a first touch of a qualifying zone, a five-minute retest and one-minute confirmation, a structural stop and target with enough reward to risk, a quiet news window and a verified economic calendar. No orders are placed for anyone, and missing data is never counted as a win.</p><h2 id="editorial">Editorial policy and AI use</h2><p>Lessons and video scripts may be drafted with AI assistance from our own rule book. Every text is checked automatically against our compliance rules: no profit promises, no invented results or statistics, no urgency tactics. Market numbers come only from recorded data. Narration in our videos uses a synthetic voice.</p><h2 id="money">How we earn</h2><p>We are an introducing partner of our broker. When you open an account through our link we may receive a commission from the broker at no extra cost to you. This never changes how a zone or alert is graded.</p><h2 id="risk">Risk</h2><p>Trading gold, forex and CFDs on margin is high risk and you can lose all of your capital. Past results do not guarantee future results. Read our <a href="../terms.html">terms and risk disclosure</a>.</p><div class="ctabox"><h3>🎁 Try our VIP group free for 7 days</h3><p>Daily XAUUSD zones before London, live signals with entry zone, stop and targets, and every result posted — wins and losses. No card, no payment.</p><div class="btns"><a class="btn gold" href="https://t.me/EngineerXGold_bot?start=trial_g_website_20261013_595a63d8">Start the free trial</a><a class="btn ghost" href="../zones/">See today's zones</a></div></div></article>
+<footer>
+<div class="warn"><b>Risk warning:</b> Trading gold, forex and CFDs carries a high risk of losing money and is not suitable for everyone. Past results do not guarantee future results. Everything on this site is educational and not financial advice. We are an introducing partner of our broker and may earn a commission on accounts opened through our link.</div>
+<p class="fl" style="margin-top:18px"><a href="../about/">About &amp; methodology</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms &amp; risk disclosure</a><a href="../feed.xml">RSS</a><a href="https://t.me/engineerxgold">Telegram</a></p>
+<p style="margin-top:10px">© 2026 Engineer X · Engr. M Ahmad Mehmood</p>
+</footer>
+</div>
+<a class="float" href="https://t.me/EngineerXGold_bot?start=trial_g_website_20261013_595a63d8">🎁 Free 7-day trial</a>
+<script>(function(){const q=new URLSearchParams(location.search);
+const s=q.get('utm_source')||'website',k=q.get('utm_content')||'site';
+if(!['facebook','instagram','youtube','pinterest','tiktok','telegram','whatsapp','website','x'].includes(s)||! /^[a-z0-9_]{1,20}$/.test(k))return;
+document.querySelectorAll('a[href]').forEach(function(a){try{const u=new URL(a.href);
+if(u.hostname==='t.me'&&u.searchParams.get('start')?.startsWith('trial')){
+u.searchParams.set('start','trial_g_'+s+'_20261013_'+k);a.href=u.toString();}}catch(e){}});
+})();</script></body>
+</html>
