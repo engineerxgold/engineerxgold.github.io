@@ -101,45 +101,7 @@ footer .fl a{color:var(--muted);margin-right:16px}
 <div class="wrap">
 <nav><a class="logo" href="../"><b>X</b>Engineer X</a>
 <div class="links"><a href="../zones/">Daily Zones</a><a href="../blog/">Learn</a><a href="../ea/">Gold EA</a><a href="../about/">About</a><a class="cta" href="https://wa.me/923438195691">Get the EA</a></div></nav>
-<article><h1>About Engineer X and our method</h1><p>Engr. M Ahmad Mehmood builds MQL5 Expert Advisors and publishes XAUUSD zones from broker candles only.</p><p>Engineer X Precision Zones — method and evidence</p><p>What the professionals do (sources)
- Zone = the base (1–3 small candles) that launched a displacement (1–3 clean, large
-  candles) which broke structure; never the impulse candle itself.
-  Proximal line = base body, distal line = base wick. Tighter body zones; refine the
-  higher-timeframe zone on a lower timeframe (H4 → H1 → M15).
-  ([LuxAlgo: zone scoring &amp; refinement](https://www.luxalgo.com/library/concept/zone-scoring-and-refinement/),
-  [LuxAlgo: order block refinement](https://www.luxalgo.com/library/concept/order-block-anatomy-and-refinement/),
-  [ForexFactory: precise S&amp;D](https://www.forexfactory.com/thread/1310475-precise-supply-and-demand-trading-strategy),
-  [AlgoMatrix: gold S&amp;D](https://algomatrix.trade/blog/supply-demand-zone-trading-gold.html),
-  [The Forex Scalpers: XAUUSD institutional zones](https://theforexscalpers.com/xauusd-supply-and-demand-zones-how-institutional-traders-map-golds-key-levels/))
- &quot;Odds enhancers&quot; (Sam Seiden): departure strength, time at the base, freshness, room to the
-  next opposite zone. First test is the best; a close through the zone ends it.
- Session highs/lows (Asia, London, New York) and the previous day&#x27;s high/low are liquidity.</p><p>What gold history says (tested here, not assumed)
-Real XAUUSD data 2016–2018 (Dukascopy ticks → M15/H1/H4/D1). Every 7 hours on weekdays the
-candidate zones were built from data available at that moment only, then followed for 5
-trading days. HELD = price moved 1 H1-ATR away from the band; FAILED = an H1 candle closed
-beyond the invalidation first. Each zone type was compared with random bands at a similar
-distance (same geometry), because random bands also &quot;hold&quot; often in a ranging market.</p><p>Zone type (2016–17, 1-ATR reaction)  hold %  random at same distance 
----------
- Previous day high / low (at the level)  63.7 / 64.0  70.4 / 71.3 
- Session high / low (at the level)  66.9  70.8 
- H4 swing high / low (at the level)  63.5  73.6 
- Round numbers  59.0  71.4 
- Just beyond an H4 swing (sweep zone)  79.9  76.1 
- Just beyond previous day high / low  76.2 / 78.7  72.5 / 76.1 
- S&amp;D origin zones H4  83.3 (n=72)  79.7 
- S&amp;D origin zones H1  73.0  76.6</p><p>2018 (held out, not used to choose the rules): published H4 sweep zones 80.2 % vs 74.5 %
-random; H4 origin zones 85.7 % vs 71.4 % (small sample).</p><p>Findings used in the engine:
-1. Obvious highs/lows are run more often than random levels — so zones are never placed
-   on them; they are placed just beyond them (where the stop run usually ends).
-2. H4 origins are better than H1 origins; textbook &quot;grade&quot; points (one-candle spike, very
-   large departure, very short base) did not predict better reactions and were dropped.
-   Sustained 2–3 candle departures and H1 zones nested in H4 zones did better.
-3. No zone method is a guarantee. Edges are a few percentage points. Results of every
-   published zone are tracked and reported honestly (weekly scorecard).</p><p>The published map
- H4: up to 2 buy + 2 sell zones; H1: up to 2 + 2. Nearest good zones within 2 daily ATRs.
- Band width: 25 % of the H1 ATR, between $1 and $6 (narrow, like professional maps).
- Each zone has an invalidation price (an H1 close beyond it ends the zone).
- Updated: daily plan (Asian open) and after the Asian, London and New York sessions.</p></article>
+<article><h1>About Engineer X and our method</h1><p>Engr. M Ahmad Mehmood builds MQL5 Expert Advisors and publishes XAUUSD zones from broker candles only.</p></article>
 <footer>
 <div class="warn"><b>Risk warning:</b> Trading gold, forex and CFDs carries a high risk of losing money and is not suitable for everyone. Past results do not guarantee future results. Everything on this site is educational and not financial advice. We are an introducing partner of our broker and may earn a commission on accounts opened through our link.</div>
 <p class="fl" style="margin-top:18px"><a href="../about/">About &amp; methodology</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms &amp; risk disclosure</a><a href="../feed.xml">RSS</a><a href="https://t.me/engineerxgold">Telegram</a></p>
